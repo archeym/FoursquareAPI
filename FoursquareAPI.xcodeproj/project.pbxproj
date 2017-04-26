@@ -15,6 +15,8 @@
 		2145A7681EAF2982009EA8CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2145A7661EAF2982009EA8CA /* LaunchScreen.storyboard */; };
 		2145A7701EAF3268009EA8CA /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2145A76F1EAF3268009EA8CA /* Venue.swift */; };
 		2145A7721EAF4727009EA8CA /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2145A7711EAF4727009EA8CA /* DetailViewController.swift */; };
+		219384E81EB054C700A66A1D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 219384E71EB054C700A66A1D /* MapKit.framework */; };
+		219384EA1EB054CE00A66A1D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 219384E91EB054CE00A66A1D /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		2145A7691EAF2982009EA8CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2145A76F1EAF3268009EA8CA /* Venue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
 		2145A7711EAF4727009EA8CA /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		219384E71EB054C700A66A1D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		219384E91EB054CE00A66A1D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				219384EA1EB054CE00A66A1D /* CoreLocation.framework in Frameworks */,
+				219384E81EB054C700A66A1D /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +52,7 @@
 			children = (
 				2145A75C1EAF2982009EA8CA /* FoursquareAPI */,
 				2145A75B1EAF2982009EA8CA /* Products */,
+				219384E61EB054C700A66A1D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +78,15 @@
 				2145A7691EAF2982009EA8CA /* Info.plist */,
 			);
 			path = FoursquareAPI;
+			sourceTree = "<group>";
+		};
+		219384E61EB054C700A66A1D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				219384E91EB054CE00A66A1D /* CoreLocation.framework */,
+				219384E71EB054C700A66A1D /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

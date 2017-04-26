@@ -99,7 +99,7 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "review") else { return UITableViewCell()
         }
-        cell.detailTextLabel?.text = reviewText[indexPath.row]
+        cell.textLabel?.text = reviewText[indexPath.row]
         return cell
     }
 }

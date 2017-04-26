@@ -25,6 +25,7 @@ class SearchViewController: UIViewController, UITextFieldDelegate  {
             }
             viewController.cat = text
             navigationController?.pushViewController(viewController, animated: true)
+            searchTextField.text? = ""
         }
     }
     

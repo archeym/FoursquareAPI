@@ -15,6 +15,8 @@ class Venue {
     var phone : String = ""
     var url : String = ""
     var categoryName : String = ""
+    var lat : Double = 0.0
+    var lng : Double = 0.0
     
     init(dict: [String : Any]){
         
@@ -24,6 +26,9 @@ class Venue {
         if let location = dict["location"] as? [String : Any]{
             address = location["address"] as? String ?? ""
             city = location ["city"] as? String ?? ""
+            lat = location["lat"] as? Double ?? 0.0
+            lng = location["lng"] as? Double ?? 0.0
+            
         }
         if let contact = dict["contact"] as? [String : Any]{
             phone = contact["phone"] as? String ?? ""
